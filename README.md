@@ -1,2 +1,2 @@
-# Shewaga_D_Paschenko_M_MD_Portfolio
+# Shewaga_D_Pashchenko_M_MD_Portfolio
 A combined portfolio
