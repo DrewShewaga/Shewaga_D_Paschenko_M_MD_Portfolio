@@ -3,12 +3,73 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Template</title>
+<title>MD</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 
 <body>
+	<main class="container">
+		<header class="mainHeader">
+			<img src="images/md_logo.png" alt="MD Logo" id="mainLogo">
+
+			<div class="navIcon">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<nav class="navMenu hidden">
+				<img src="images/md_logo.png" alt="MD Logo" id="navLogo">
+
+			
+				<ul class="mainNav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Designer</a></li>
+					<li><a href="#">Developer</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+				<p class="allRR">All rights reserved 2018</p>
+			</nav>
+		</header>
+
+		<div class="content">
+
+			<section class="designer">
+				<h2 class="hidden">Designer</h2>
+				<img src="images/max.png" alt="Designer Max Paschenko" class="desProf">
+
+				<section class="desInfo">
+					<h2 class="jobTitle">Designer</h2>
+					<h3 class="name">Maksym Paschenko</h3>
+					<button class="works">Works</button>
+				</section>
+			</section>
+
+			<section class="developer">
+					<h2 class="hidden">Developer</h2>
+					<img src="images/drew.png" alt="Developer Drew Shewaga" class="devProf">
+	
+					<section class="devInfo">
+						<h2 class="jobTitle">Developer</h2>
+						<h3 class="name">Drew Shewaga</h3>
+						<button class="works">Works</button>
+					</section>
+				</section>
+
+		</div>
+
+		<section class="contact">
+			<h3 class="contHead">Contact</h3>
+			<input type="email" class="email" placeholder="Your Email Address...">
+			<input type="text" class="message" placeholder="Your Message...">
+			<input type="submit" value="Submit" class="submit">
+			<p class="allRR">All rights reserved 2018</p>
+		</section>
+	
+	
+	</main>
 
 	<script src="js/main.js"></script>
 </body>

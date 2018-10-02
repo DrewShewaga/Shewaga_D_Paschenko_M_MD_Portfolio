@@ -1,0 +1,30 @@
+@import '../_vars';
+
+.mainHeader {
+    flex: 1;
+    height: 58px;
+    background-color: $mobileHeader;
+    display: flex;
+}
+
+#mainLogo {
+    width: 38px;
+    height: 40px;
+    align-self: center;
+    margin-left: 12px;
+}
+
+.navIcon {
+    position: absolute;
+    right: 18px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.navIcon div {
+    width: 25px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: $white;
+    margin-bottom: 6px;
+}

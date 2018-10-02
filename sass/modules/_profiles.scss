@@ -1,0 +1,85 @@
+@import '_vars';
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.designer, .developer {
+    flex: 1;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.designer {
+    background-image: url("../images/des_bg.png");
+}
+
+.developer {
+    background-image: url("../images/dev_bg.png");
+}
+
+.content img {
+    flex: 1;
+    align-items: baseline;
+    align-content: center;
+    width: 42%;
+    height: 42%;
+    border-radius: 100%;
+    border: #999 1px solid;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.desInfo, .devInfo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-evenly;
+}
+
+.desProf {
+    margin-left: 20px;
+}
+
+.devProf {
+    margin-right: 20px;
+    order: 2;
+}
+
+.desInfo {
+    text-align: right;
+}
+
+.devInfo {
+    text-align: left;
+}
+
+.jobTitle {
+    font-size: 1.625em;
+    font-weight: bold;
+    opacity: 0.34;
+    flex: 1;
+    margin-top: 15%;
+}
+
+.name {
+    flex: 1;
+    font-size: 1em;
+    font-weight: bold; 
+}
+
+.works {
+    margin-bottom: 15%;
+    width: 98px;
+    height: 38px;
+    border-radius: 38px;
+    border: #333 solid 1px;
+    background-color: $butGreen;
+}
