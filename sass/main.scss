@@ -1,7 +1,9 @@
 @import '_vars';
+@import 'modules/_nav';
 @import 'modules/_header';
 @import 'modules/_profiles';
 @import 'modules/_contact';
+
 
 .hidden {
     display: none;
@@ -10,4 +12,8 @@
 .container {
     display: flex;
     flex-direction: column;
+}
+
+.scrollStop {
+	overflow: hidden;
 }

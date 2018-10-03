@@ -1,0 +1,58 @@
+@import '_vars';
+
+.navMenu {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 85%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background: #53ab52;
+    background: -moz-linear-gradient(top, #53ab52 0%, #40d640 61%, #212121 100%);
+    background: -webkit-linear-gradient(top, #53ab52 0%,#40d640 61%,#212121 100%);
+    background: linear-gradient(to bottom, #53ab52 0%,#40d640 61%,#212121 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53ab52', endColorstr='#212121',GradientType=0 );
+}
+
+#navLogo {
+    width: 100px;
+    align-self: center;
+    margin-top: 75px;
+    margin-bottom: 70px;
+}
+
+.mainNav {
+    display: flex;
+    flex-direction: column;
+    height: 670px;
+    width: 90%;
+}
+
+.mainNav li {
+    flex: 1;
+    display: flex
+  
+}
+
+.mainNav li a {
+    align-self: center;
+    background-color: #75D515;
+    padding: 18px 0;
+    margin: 0 25px;
+    border: 1px #707070 solid;
+    border-radius: 25px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    flex: 1;
+}
+
+.navMenu p {
+    font-size: .65em;
+    color: $white;
+}
