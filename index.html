@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MD</title>
-<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/flickity.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -24,10 +25,10 @@
 
 			
 				<ul class="mainNav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Designer</a></li>
-					<li><a href="#">Developer</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#" class="navHome">Home</a></li>
+					<li><a href="#" class="navDes">Designer</a></li>
+					<li><a href="#" class="navDev">Developer</a></li>
+					<li><a href="#" class="navCon">Contact</a></li>
 				</ul>
 
 				<p class="allRR">All rights reserved 2018</p>
@@ -43,7 +44,7 @@
 				<section class="desInfo">
 					<h2 class="jobTitle">Designer</h2>
 					<h3 class="name">Maksym Pashchenko</h3>
-					<button class="works">Works</button>
+					<button class="works worksMax">Works</button>
 				</section>
 			</section>
 
@@ -54,7 +55,7 @@
 					<section class="devInfo">
 						<h2 class="jobTitle">Developer</h2>
 						<h3 class="name">Drew Shewaga</h3>
-						<button class="works">Works</button>
+						<button class="works worksDrew">Works</button>
 					</section>
 				</section>
 
@@ -67,10 +68,40 @@
 			<input type="submit" value="Submit" class="submit">
 			<p class="allRR">All rights reserved 2018</p>
 		</section>
-	
-	
-	</main>
+	</main><!--END OF MAIN-->
 
+
+
+	<section class="maxBox hidden">
+		<div class="boxInfo">
+
+			<div class="socialLinks">
+				<a href="https://www.youtube.com/channel/UCWJ9hcRO-He76QNnQ_wzwXA" class="social"><img src="images/icons/yt.png" alt="YouTube Link" class="link"></a>
+				<a href="https://twitter.com/PaschMax" class="social"><img src="images/icons/tw.png" alt="Twitter Link" class="link"></a>
+				<a href="https://www.instagram.com/karobka" class="social"><img src="images/icons/in.png" alt="Instagram Link" class="link"></a>
+				<a href="https://www.facebook.com/maxim.paschenko.5" class="social"><img src="images/icons/fb.png" alt="Facebook Link" class="link"></a>
+				<a href="https://github.com/paschmxx" class="social"><img src="images/icons/gh.png" alt="GitHub Link" class="link"></a>
+			</div>
+
+			<h2 class="myJob">Designer</h2>
+			<h2 class="myName">Maksym Pashchenko</h2>
+		</div><!--END OF BOXINFO-->
+
+		<div class="main-carousel">
+			
+			<div class="carousel-cell maxCell"><img src="images/max_t71.jpg" alt="T71 cover art" class="maxCellImg"></div>
+			<div class="carousel-cell maxCell"><img src="images/max_dmm.jpg" alt="Du Ma May cover art" class="maxCellImg"></div>
+			<div class="carousel-cell maxCell"><img src="images/max_flower.jpg" alt="Flower Cover Art" class="maxCellImg"></div>
+		</div>
+
+		<div class="vidBox">
+			<iframe class="vid" src="https://www.youtube.com/embed/Jhn2gmjNnfE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+
+
+	</section>
+
+	<script src="js/flickity.pkgd.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
