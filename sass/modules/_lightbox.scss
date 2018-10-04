@@ -3,11 +3,12 @@
 .maxBox, .drewBox{
     background-repeat: no-repeat;
     background-size: cover;
-    height: 91vh;
+    // height: 91vh;
     position: absolute;
     top: 58px;
     width: 100%;
     background-color: $white;
+    overflow: visible;
 }
 
 .maxBox {
@@ -78,12 +79,14 @@
     display: flex;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .vid {
     margin: 0 auto;
     border-radius: 30px;
-    width: 75%;
+    // width: 75%;
+    height: 40%;
 }
 
 .exit {
