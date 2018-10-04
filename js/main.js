@@ -20,8 +20,6 @@
     //FLICKITY
     var max = document.querySelector('.max-carousel');
     var drew = document.querySelector('.drew-carousel');
-    // var Flickity = require('flickity');
-    // require('flickity-imagesloaded');
     var flkty = new Flickity( max, {
       // options
       cellAlign: 'center',
@@ -82,6 +80,26 @@
         navMenu.classList.add('hidden');
     }
 
+    function patch() {
+        mbox.classList.add('hidden');
+        dbox.classList.add('hidden');
+        mbox.style.opacity = "1";
+        dbox.style.opacity = "1";
+    }
+
+    var timeO;
+
+    function timer() {
+        timeO = setTimeout(patch, 1500);
+    }
+
+    function opacity() {
+        mbox.style.opacity = "0";
+        dbox.style.opacity = "0";
+    }
+
+    opacity();
+    timer();
 
 
     //EVENT HANDLING
