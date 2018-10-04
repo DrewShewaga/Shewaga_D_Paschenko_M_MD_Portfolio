@@ -6,6 +6,7 @@
     //VARIABLE STACK
     let navIcon = document.querySelector('.navIcon'),
         navMenu = document.querySelector('.navMenu'),
+        main = document.querySelector('.content'),
         body = document.querySelector('body'),
         mWorks = document.querySelector('.worksMax'),
         navDes = document.querySelector('.navDes'),
@@ -63,20 +64,20 @@
 
     function showMax() {
         mbox.classList.remove('hidden');
-        body.classList.add('scrollStop');
+        main.classList.add('hidden');
         dbox.classList.add('hidden');
     }
 
     function showDrew() {
         dbox.classList.remove('hidden');
-        body.classList.add('scrollStop');
+        main.classList.add('hidden');
         mbox.classList.add('hidden');
     }
 
     function closeLB() {
         mbox.classList.add('hidden');
         dbox.classList.add('hidden');
-        body.classList.remove('scrollStop');
+        main.classList.remove('hidden');
         navMenu.classList.add('hidden');
     }
 
