@@ -2,7 +2,6 @@
 
 .contact {
     background-color: $contGray;
-    // height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -14,6 +13,10 @@
     color: $white;
     font-size: 0.75em;
     margin-top: 20px;
+}
+
+.offers {
+    display: none;
 }
 
 .email {
@@ -51,12 +54,86 @@
     width: 15%;
     margin-left: 75.1%;
     background-color: $contGray;
-    border: #51FF1C 1px solid;
+    border: $butGreen2 1px solid;
     border-radius: 15px;
-    color: #51FF1C;
+    color: $butGreen2;
 }
 
 .allRR {
     text-align: center;
     margin: 10px 0;
+}
+
+@include desktop {
+    .contact {
+        background-image: url("../images/contact_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top: 750px;
+        height: 800px;
+        align-items: center;
+        justify-content: center
+    }
+
+    .contHead {
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        color: #111;
+        font-size: 2em;
+        margin-top: 20px;
+    }
+
+    .offers {
+        display: block;
+        color: $white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 50px;
+        font-size: 1.5em;
+    }
+
+    .email {
+        background: none;
+        font-size: 1em;
+        color: $white;
+        margin-left: 0;
+        padding-left: 10px;
+        width: 38%;
+        margin-top: 50px;
+    }
+
+    .message {
+        width: 38%;
+        height: 140px;
+        background-color: $impgray;
+        font-size: 1em;
+        margin-bottom: 10px;
+        color: $white;
+        margin-left: 0;
+        padding-left: 10px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+
+
+    .submit {
+        margin-left: 0;
+        background: none;
+        border: $butGreen2 4px solid;
+        border-radius: 40px;
+        width: 168px;
+        height: 50px;
+    }
+
+    .submit:hover {
+        background-color: rgb(68, 68, 68);
+        cursor: pointer;
+    }
+    
+    .allRR {
+        position: absolute;
+        top: 1630px;
+      
+    }
 }

@@ -13,7 +13,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
 }
 
 .designer {
@@ -26,8 +25,6 @@
 
 .content img {
     flex: 1;
-    align-items: baseline;
-    align-content: center;
     width: 42%;
     height: 42%;
     border-radius: 100%;
@@ -87,4 +84,73 @@
 .works:hover {
     cursor: pointer;
     background-color: #36A268;
+}
+
+
+@include desktop {
+    .content {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        background-image: url("../images/content_bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .designer, .developer {
+        background: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content img {
+        flex: 1;
+        height: auto;
+        width: 320px;
+        border-radius: 38%;
+        border: none;
+        margin-top: 260px;
+        margin-bottom: 0px;
+        order: 0;
+    }
+
+    .desInfo, .devInfo {
+        flex: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .jobTitle {
+        font-size: 3.8em;
+        opacity: 0.34;
+        flex: 1;
+        color: $white;
+        transform: translateY(-390px);
+        margin-top: -25px;
+    }
+
+    .name {
+        font-size: 2.5em;
+        font-weight: initial; 
+        color: $white;
+    }
+
+    .works {
+        margin-bottom: 120px;
+        margin-top: 50px;
+        width: 168px;
+        height: 50px;
+        border-radius: 38px;
+        border: $butGreen2 solid 4px;
+        background: none;
+        color: $butGreen2;
+    }
+
+    .works:hover {
+        background-color: rgb(68, 68, 68);
+    }
 }

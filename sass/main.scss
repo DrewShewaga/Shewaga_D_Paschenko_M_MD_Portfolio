@@ -1,4 +1,5 @@
 @import '_vars';
+@import '_mixins';
 @import 'modules/_nav';
 @import 'modules/_header';
 @import 'modules/_profiles';
@@ -18,3 +19,4 @@
 .scrollStop {
 	overflow: hidden;
 }
+

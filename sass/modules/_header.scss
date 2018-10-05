@@ -29,3 +29,22 @@
     background-color: $white;
     margin-bottom: 6px;
 }
+
+@include desktop {
+    .mainHeader {
+        height: auto;
+        background: none;
+        z-index: 10;
+    } 
+
+    #mainLogo {
+        width:  121px;
+        height: 126px;
+        margin-left: 97px;
+    }
+
+    .navIcon {
+        display: none;
+    }
+
+}
