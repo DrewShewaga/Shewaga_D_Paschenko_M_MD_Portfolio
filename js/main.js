@@ -8,6 +8,7 @@
         navMenu = document.querySelector('.navMenu'),
         main = document.querySelector('.content'),
         body = document.querySelector('body'),
+        contact = document.querySelector('.contact'),
         mWorks = document.querySelector('.worksMax'),
         navDes = document.querySelector('.navDes'),
         dWorks = document.querySelector('.worksDrew'),
@@ -66,12 +67,14 @@
     function showMax() {
         mbox.classList.remove('hidden');
         main.classList.add('hidden');
+        contact.classList.add('hidden');
         dbox.classList.add('hidden');
     }
 
     function showDrew() {
         dbox.classList.remove('hidden');
         main.classList.add('hidden');
+        contact.classList.add('hidden');
         mbox.classList.add('hidden');
     }
 
@@ -79,6 +82,7 @@
         mbox.classList.add('hidden');
         dbox.classList.add('hidden');
         main.classList.remove('hidden');
+        contact.classList.remove('hidden');
         navMenu.classList.add('hidden');
     }
 
