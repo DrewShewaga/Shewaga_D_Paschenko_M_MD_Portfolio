@@ -174,15 +174,19 @@
 
     .vidBox {
         display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: -25%;
+        margin-bottom: 150px;
+        margin-right: 14%;
+        float: right;
+        width: 40%;
+    
     }
     
     .vid {
         margin: 0 auto;
         border-radius: 30px;
-        height: 300px;
-        width: 450px
+        height: 360px;
+        width: 100%;
     }
 
     .exit {
