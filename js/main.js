@@ -59,6 +59,7 @@
 
     function closeMenu() {
         navMenu.classList.add('hidden');
+        body.classList.remove('scrollStop');
     }
 
 
