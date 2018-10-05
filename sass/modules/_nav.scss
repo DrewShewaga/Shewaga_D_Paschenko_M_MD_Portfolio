@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    animation: navSlide .5s ease-in-out 1 forwards;
 
     background: #53ab52;
     background: -moz-linear-gradient(top, #53ab52 0%, #40d640 61%, #212121 100%);
@@ -55,6 +56,17 @@
 .navMenu p {
     font-size: .65em;
     color: $white;
+}
+
+@keyframes navSlide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%)
+    }
+
 }
 
 
