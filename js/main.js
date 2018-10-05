@@ -48,13 +48,7 @@
         }
         else {
             navMenu.classList.add('hidden');
-
-            if (mbox.classList.value == 'maxBox hidden'){
             body.classList.remove('scrollStop');
-            }
-            else {
-
-            }
         }
     }
 
@@ -84,6 +78,7 @@
         main.classList.remove('hidden');
         contact.classList.remove('hidden');
         navMenu.classList.add('hidden');
+        body.classList.remove('scrollStop');
     }
 
     function patch() {
